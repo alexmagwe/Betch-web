@@ -1,0 +1,55 @@
+{% extends 'layout.html'%}
+<!DOCTYPE html>
+<html>
+<head>
+
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+
+    {% if title %}
+        <title>BTECH - {{ title }}</title>
+    {% else %}
+        <title>BTECH</title>
+    {% endif %}
+    
+</head>
+<body>
+  <header>
+  {%include 'navbar.html'%}
+  {%block content %}
+      <main class="container">
+      <div class='about-us'>
+       <h1 class='we-are' >
+       MICROPROCESSOR TECHNOLOGY & INSTRUMENTATION
+    </h1>
+      
+   
+    <p style='font-family:Helvetica;font-size:1.5em;color:grey;'>We are a technological community made up of diverse scientific fields and faculties</p>
+</div>
+
+      </main>
+      
+    </div>
+  </header>
+<div class='jumbotron bg-dark jumbotron-fluid test' style="position:absolute;top:100vh;margin:2em;padding:5px;">
+
+<p class='lead'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget eros vel odio malesuada pulvinar nec vitae libero. Fusce odio ante, tempor vel sapien pellentesque, ultricies tempor ante. Quisque eu scelerisque ipsum. Duis varius consectetur dolor, sit amet imperdiet nunc tempus sit amet. Etiam auctor massa dictum, congue ante at, finibus nisi. Curabitur nunc elit, auctor quis gravida eu, suscipit eget dui. Suspendisse bibendum mauris nulla, in pulvinar massa mattis in. Nullam viverra tortor lorem, in ultrices ante tempus iaculis. Morbi placerat cursus ipsum, vel elementum justo dapibus sit amet. Cras ullamcorper facilisis leo et faucibus. Nam sit amet urna a lorem sodales finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque enim nisl, mattis quis sagittis consequat, porta sed mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus nec sem eros. Duis feugiat sagittis erat, vitae cursus est pellentesque ut.
+
+Suspendisse at congue tellus. Curabitur ac malesuada dolor. Nullam lacinia non nisi sit amet lacinia. Aenean sagittis, tellus eu euismod consequat, metus massa eleifend erat, non suscipit est ipsum in ligula. Etiam ante sapien, mattis sit amet lacus nec, volutpat auctor diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin tristique vitae urna eu condimentum. Aenean a velit sem. Quisque ut consectetur eros, sit amet sodales nibh. In in scelerisque erat.
+ </p>
+ <p><a class='btn-primary btn-lg' href='#article' role='button'>read more</a></p>
+ </div>
+ 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{%endblock%}
+</body>
+</html>
