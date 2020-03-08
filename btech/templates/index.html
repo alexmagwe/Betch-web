@@ -1,43 +1,71 @@
+<<<<<<< HEAD
+{% extends 'layout.html'%}
+<head>
+=======
+{%extends 'layout.html'%}
 <!DOCTYPE html>
 <html>
 <head>
+
+ 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.css') }}">
-
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
     {% if title %}
         <title>BTECH - {{ title }}</title>
     {% else %}
         <title>BTECH</title>
     {% endif %}
+    
 </head>
+<<<<<<< HEAD
+  {%block content %}
+      <main class="container">
+      <div class='about-us'>
+       <h1 class='we-are' >
+       MICROPROCESSOR TECHNOLOGY & INSTRUMENTATION
+    </h1>
+      
+   
+    <p style='font-family:Helvetica;font-size:1.5em;color:rgba(255,255,255,0.6);'>We are a technological community made up of diverse scientific fields and faculties</p>
+</div>
+
+=======
 <body>
   <header>
-    <div class="img">
-      <div class="justify-left mt-20" id="content">
-      <h1> University Of Nairobi</h1>
-      <h1> Chiromo Campus </h1>
-      </div>
-      <h2 class="justify-center mr-auto ml-auto">MICROPROCESSOR TECHNOLOGY & INSTRUMENTATION</h2>
+  {%block content %}
       <main class="container">
-      <div class="col-3 mr-auto ml-auto">
-        <div class="card" id="glass" style="width: 18rem;">
-          <div class="card-body">
-               <a class="btn btn-outline-secondary font-weight-bold" href="{{ url_for('homepage') }}">Home</a>
-               <a class="btn btn-outline-secondary font-weight-bold" href="{{ url_for('login') }}">Sign In</a>
-               <a class="btn btn-outline-secondary font-weight-bold" href="{{ url_for('register') }}">Sign Up</a>
+       <h1 class='we-are' >
+       MICROPROCESSOR TECHNOLOGY & INSTRUMENTATION
+    </h1>
+      <div class='about-us'>
+   
+    <p style='font-family:Helvetica;font-size:1.5em;color:grey;'>We are a technological community made up of diverse scientific fields and faculties</p>
+</div>
+        <div class="background-img">
+       
+               
           </div>
-        </div>
-      </div>
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
       </main>
       
     </div>
   </header>
+<<<<<<< HEAD
+<div class='jumbotron bg-dark jumbotron-fluid test' style="position:absolute;top:100vh;margin:2em;padding:5px;">
+
+<p class='lead'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget eros vel odio malesuada pulvinar nec vitae libero. Fusce odio ante, tempor vel sapien pellentesque, ultricies tempor ante. Quisque eu scelerisque ipsum. Duis varius consectetur dolor, sit amet imperdiet nunc tempus sit amet. Etiam auctor massa dictum, congue ante at, finibus nisi. Curabitur nunc elit, auctor quis gravida eu, suscipit eget dui. Suspendisse bibendum mauris nulla, in pulvinar massa mattis in. Nullam viverra tortor lorem, in ultrices ante tempus iaculis. Morbi placerat cursus ipsum, vel elementum justo dapibus sit amet. Cras ullamcorper facilisis leo et faucibus. Nam sit amet urna a lorem sodales finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque enim nisl, mattis quis sagittis consequat, porta sed mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus nec sem eros. Duis feugiat sagittis erat, vitae cursus est pellentesque ut.
+
+Suspendisse at congue tellus. Curabitur ac malesuada dolor. Nullam lacinia non nisi sit amet lacinia. Aenean sagittis, tellus eu euismod consequat, metus massa eleifend erat, non suscipit est ipsum in ligula. Etiam ante sapien, mattis sit amet lacus nec, volutpat auctor diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin tristique vitae urna eu condimentum. Aenean a velit sem. Quisque ut consectetur eros, sit amet sodales nibh. In in scelerisque erat.
+ </p>
+ <p><a class='btn-primary btn-lg' href='#article' role='button'>read more</a></p>
+ </div>
+=======
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
  
 
     <!-- Optional JavaScript -->
@@ -45,5 +73,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{%endblock%}
+<<<<<<< HEAD
+=======
 </body>
 </html>
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f

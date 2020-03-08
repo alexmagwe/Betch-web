@@ -13,7 +13,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
+<<<<<<< HEAD
 admin = Admin(app, name='Admin Panel')
+=======
+admin = Admin(app, name='Btech Admin Panel')
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
 # login_manager.login_view = 'login'
 # login_manager.login_message_category = 'info'
 

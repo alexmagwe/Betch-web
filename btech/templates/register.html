@@ -1,4 +1,6 @@
 {% extends "layout2.html" %}
+<<<<<<< HEAD
+
 {% block content %}
 <div class="col-8 ml-auto mr-auto">
     <div class="content-section ">
@@ -10,12 +12,26 @@
                     {{ form.surname.label(class="form-control-label") }}
                     {% if form.surname.errors %}
                         {{ form.surname(class="form-control form-control-lg is-invalid") }}
+=======
+{% block content %}
+<div>
+    <div >
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset >
+                <legend >Sign Up</legend>
+                <div >
+                    {{ form.surname.label() }}
+                    {% if form.surname.errors %}
+                        {{ form.surname() }}
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
                         <div class="invalid-feedback">
                             {% for error in form.surname.errors %}
                                 <span>{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% else %}
+<<<<<<< HEAD
                         {{ form.surname(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
@@ -23,12 +39,22 @@
                     {{ form.other_names.label(class="form-control-label") }}
                     {% if form.other_names.errors %}
                         {{ form.other_names(class="form-control form-control-lg is-invalid") }}
+=======
+                        {{ form.surname() }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.other_names.label() }}
+                    {% if form.other_names.errors %}
+                        {{ form.other_names() }}
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
                         <div class="invalid-feedback">
                             {% for error in form.other_names.errors %}
                                 <span>{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% else %}
+<<<<<<< HEAD
                         {{ form.other_names(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
@@ -36,12 +62,22 @@
                     {{ form.email.label(class="form-control-label") }}
                     {% if form.email.errors %}
                         {{ form.email(class="form-control form-control-lg is-invalid") }}
+=======
+                        {{ form.other_names() }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.email.label() }}
+                    {% if form.email.errors %}
+                        {{ form.email() }}
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
                         <div class="invalid-feedback">
                             {% for error in form.email.errors %}
                                 <span>{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% else %}
+<<<<<<< HEAD
                         {{ form.email(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
@@ -50,12 +86,23 @@
 
                     {% if form.reg_number.errors %}
                         {{ form.reg_number(class="form-control form-control-lg is-invalid") }}
+=======
+                        {{ form.email() }}
+                    {% endif %}
+                </div>
+                 <div class="form-group">
+                    {{ form.reg_number.label() }}
+
+                    {% if form.reg_number.errors %}
+                        {{ form.reg_number() }}
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
                         <div class="invalid-feedback">
                             {% for error in form.reg_number.errors %}
                                 <span>{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% else %}
+<<<<<<< HEAD
                         {{ form.reg_number(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
@@ -65,11 +112,23 @@
                     {% if form.course_id.errors %}
                         {{ form.course_id(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
+=======
+                        {{ form.reg_number() }}
+                    {% endif %}
+                </div>
+                 <div class="form-group">
+                    {{ form.course_id.label() }}
+
+                    {% if form.course_id.errors %}
+                        {{ form.course_id() }}
+                        <div>
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
                             {% for error in form.course_id.errors %}
                                 <span>{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% else %}
+<<<<<<< HEAD
                         {{ form.course_id(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
@@ -79,11 +138,23 @@
                     {% if form.level.errors %}
                         {{ form.level(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
+=======
+                        {{ form.course_id() }}
+                    {% endif %}
+                </div>
+                 <div class="form-group">
+                    {{ form.level.label() }}
+
+                    {% if form.level.errors %}
+                        {{ form.level() }}
+                        <div>
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
                             {% for error in form.level.errors %}
                                 <span>{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% else %}
+<<<<<<< HEAD
                         {{ form.level(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
@@ -92,11 +163,22 @@
                     {% if form.password.errors %}
                         {{ form.password(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
+=======
+                        {{ form.level() }}
+                    {% endif %}
+                </div>
+                <div>
+                    {{ form.password.label() }}
+                    {% if form.password.errors %}
+                        {{ form.password() }}
+                        <div>
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
                             {% for error in form.password.errors %}
                                 <span>{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% else %}
+<<<<<<< HEAD
                         {{ form.password(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
@@ -105,11 +187,22 @@
                     {% if form.confirm_password.errors %}
                         {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
+=======
+                        {{ form.password() }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.confirm_password.label() }}
+                    {% if form.confirm_password.errors %}
+                        {{ form.confirm_password() }}
+                        <div>
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
                             {% for error in form.confirm_password.errors %}
                                 <span>{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% else %}
+<<<<<<< HEAD
                         {{ form.confirm_password(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
@@ -125,4 +218,22 @@
         </small>
     </div>
 </div>
+
+=======
+                        {{ form.confirm_password() }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div>
+                {{ form.submit() }}
+            </div>
+        </form>
+    </div>
+    <div>
+        <small>
+            Already Have An Account? <a  href="{{ url_for('login') }}">Sign In</a>
+        </small>
+    </div>
+</div>
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
 {% endblock content %}

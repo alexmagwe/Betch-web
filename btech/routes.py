@@ -44,7 +44,11 @@ def contact_us():
 @app.route("/register", methods=['GET','POST'])
 def register():
 	if current_user.is_authenticated:
+<<<<<<< HEAD
+		return redirect(url_for('homepage'))
+=======
 		return redirect(url_for('home'))
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
 	form = RegisterForm()
 	if form.validate_on_submit():
 		hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -58,17 +62,29 @@ def register():
 @app.route("/login", methods=['GET','POST'])
 def login():
 	if current_user.is_authenticated:
+<<<<<<< HEAD
+		return redirect(url_for('homepage'))
+=======
 		return redirect(url_for('home'))
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
 	form = LoginForm()
 	if form.validate_on_submit():
 		user = User.query.filter_by(email=form.email.data).first()
 		if user and bcrypt.check_password_hash(user.password, form.password.data):
 			login_user(user, remember=form.remember.data)
 			next_page = request.args.get('next')
+<<<<<<< HEAD
+			return redirect(next_page) if next_page else redirect(url_for('homepage'))
+		else:
+			flash('login was unsuccessful. Please check your Email and Password','danger')
+	#else:return redirect(url_for('register'))
+	return render_template('login.html', title='Sign', form=form)
+=======
 			return redirect(next_page) if next_page else  redirect(url_for('homepage'))
 		else:
 			flash('login was unsuccessful. Please check your Email and Password','danger')
 	return render_template('login.html', title='Sign In', form=form)
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
 
 @app.route("/logout")
 def logout():

@@ -3,12 +3,25 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+<<<<<<< HEAD
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet"> 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<<<<<<< HEAD
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='forms.css') }}">
+
+=======
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
 
     {% if title %}
         <title>BTECH - {{ title }}</title>
@@ -17,15 +30,23 @@
     {% endif %}
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-steel mb-0 fixed-top">
+<<<<<<< HEAD
+
+{%block nav_bar%}
+{%include 'navbar.html'%}
+  {%endblock%}
+  
+=======
+{%block nav_bar%}
+  <nav style="background: transparent margin-bottom:5px;" class="navbar navbar-expand-md navbar-dark bg-steel mb-0 fixed-top">
     <div class="container">
-      <a class="navbar-brand mr-4" href="/">BTECH</a>
+      <a class="navbar-brand mr-4" href="/">HOME</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggle">
         <div class="navbar-nav mr-auto">
-          <a class="nav-item nav-link" href="{{ url_for('homepage') }}">Home</a>
+          <a class="nav-item nav-link" href="{{ url_for('index') }}">About</a>
           <a class="nav-item nav-link" href="{{ url_for('store') }}">Store</a>
           <a class="nav-item nav-link" href="{{ url_for('contact_us') }}">Contact Us</a>
           {% if current_user.is_admin == True %}
@@ -44,6 +65,8 @@
       </div>
     </div>
   </nav>
+  {%endblock%}
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
  
     <main role="main" class=" col-12 ml-auto mr-auto">
         <div >
@@ -59,28 +82,62 @@
           {% block content %}{% endblock %}
         </div>
     </main>
-    <!-- Footer -->
-    <footer class="page-footer font-small blue container-fluid">
-      <div class="card clearfix">
-        <div class="card border border-bottom py-2">
-          <h3 class="font-weight-bold mr-auto ml-5">About Us</h3>
-          <p>We are a technological communiuty made up of divesre scientific fields and fauclties</p>
+<<<<<<< HEAD
+  <footer  class="page-footer font-small container-fluid">
+      <div class="card clearfix bg-dark">
+        <div class="card border border-bottom py-2 bg-white">
+          <h3 class="font-weight-bold mr-auto ml-5 text-dark ">Social</h3>
+         <p style='padding:10px;margin-left:2em;'>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href= "#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            </p>
+            <p class='text-dark mr-auto ml-5'>
+            <a href='#'>Terms & conditions<a/></br>
+            <a href='#'>Privacy policy<a/></br>
+            </p>
+
+
         </div>
-        <div class="card border border-bottom py-2">
-          <h3 class="font-weight-bold mr-auto ml-5">Contact Us On</h3>
+        <div class="footer-copyright text-center text-white py-3">© 2018 Copyright:
+=======
+    <!-- Footer 
+    <footer  class="page-footer font-small blue container-fluid">
+      <div style='background-color:#222;color:#fff'class="card clearfix">
+        <div style='background-color:rgba(0,0,100,0.6);'class="card border border-bottom py-2">
+          <h3>About Us</h3>
+          
+        </div>
+        <div style='background-color:rgba(0,0,100,0.6);margin-bottom:2px;' class="card border border-bottom py-2">
+          <h3>Contact Us On</h3>
           <p>For more information about us find us on;</p>
         </div>
         <div class="footer-copyright text-center py-3">© 2018 Copyright:
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
           <a href="">BTECH</a>
         </div>
       </div>
     </footer>
-<!-- Footer -->
+<<<<<<< HEAD
+     <script>
+        $('#hamburger-container').click(function() {
+            $('.hamburger').toggleClass('close');
+        });
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+
+=======
+-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
 </body>
 </html>

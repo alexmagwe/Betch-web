@@ -1,23 +1,54 @@
-h2
-{	
-	margin-top: 100px;
-	margin-bottom: 200px;
-	color: aliceblue;
-	text-align: center;
+h2 {
+    color: aliceblue;
+    text-align: center;
 }
-#content
-{
-	text-align: center;
-	color: aliceblue;
-	margin-top: 10;
 
+<<<<<<< HEAD
+* {
+    margin: 0;
+    padding: 0;
 }
-.img
-{
-	height: 981px;
-	background: url('images/tech20.jpg');
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	background-position: center;
 
+body {}
+
+=======
+body {
+    margin: 0;
+}
+
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
+#home-icon {
+    align-self: center;
+}
+
+#home-icon:hover {
+    background-color: #fff;
+}
+
+#content {
+    position: relative;
+    text-align: center;
+    color: rgb(239, 244, 248);
+    margin-top: 10px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+}
+
+.card-body a {
+    margin: 5px;
+}
+<<<<<<< HEAD
+
+.navbar {
+    background: transparent;
+=======
+.navbar{
+	background:transparent;
+>>>>>>> 57cba9d8faab96be361a0d21a203fdcf524fe20f
 }
