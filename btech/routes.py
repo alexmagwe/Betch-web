@@ -58,7 +58,8 @@ def register():
 @app.route("/login", methods=['GET','POST'])
 def login():
 	if current_user.is_authenticated:
-		return redirect(url_for('home'))
+		return 'hello'
+		return redirect(url_for('homepage'))
 	form = LoginForm()
 	if form.validate_on_submit():
 		user = User.query.filter_by(email=form.email.data).first()
@@ -66,8 +67,7 @@ def login():
 			login_user(user, remember=form.remember.data)
 			next_page = request.args.get('next')
 			return redirect(next_page) if next_page else  redirect(url_for('homepage'))
-		else:
-			flash('login was unsuccessful. Please check your Email and Password','danger')
+
 	return render_template('login.html', title='Sign In', form=form)
 
 @app.route("/logout")
